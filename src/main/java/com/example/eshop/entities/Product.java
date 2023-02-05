@@ -40,4 +40,8 @@ public class Product {
 
     @Column(name = "date_updated")
     private Date dateUpdated;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id")
+    private SubProductCategory productCategory;
 }
