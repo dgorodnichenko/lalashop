@@ -22,4 +22,17 @@ public class ProductService {
                 .orElseThrow(() -> new ProductNotFoundException("Product with id " + id + " not found"));
         return product;
     }
+
+    public List<Product> getProductsByCategoryId(Long id) {
+        List<Product> products = productRepository.findProductsByProductCategoryId(id);
+        if (products.isEmpty()) {
+            throw new ProductNotFoundException("No products with category ID = " + id + " was found");
+        }
+
+        return products;
+    }
+
+    public List<Product> getProductByName(String keyword) {
+        return productRepository.findByNameContaining(keyword);
+    }
 }
