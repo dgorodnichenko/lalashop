@@ -16,4 +16,6 @@ public class SecurityConstants {
     public static final String COUNTRIES_URL = "/countries";
     public static final String CITIES_URL = "/city/**";
     public static final String CHECKOUT_URL = "/purchase";
+    public static final String SWAGGER_URL = "/swagger-ui/**";
+    public static final String SWAGGER_DOCS_URL = "/v3/api-docs/**";
 }

@@ -35,7 +35,9 @@ public class SecurityConfig {
                     SecurityConstants.SUBCATEGORIES_URL,
                     SecurityConstants.COUNTRIES_URL,
                     SecurityConstants.CITIES_URL,
-                    SecurityConstants.CHECKOUT_URL
+                    SecurityConstants.CHECKOUT_URL,
+                    SecurityConstants.SWAGGER_URL,
+                    SecurityConstants.SWAGGER_DOCS_URL
             )
             .permitAll()
             .anyRequest()
