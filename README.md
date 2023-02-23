@@ -19,8 +19,7 @@ The server is deployed to Heroku and provides data for an simple example of an i
    - [Login](#login)
    - [Registration](#registration)
    - [Buy a product](#buy-a-product)
-   
-   
+    
 
 ## Technologies
 - JDK 19
