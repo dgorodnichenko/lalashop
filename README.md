@@ -3,6 +3,25 @@
 This is an example of RESTful WebServer developed using Spring & SpringBoot.
 The server provides endpoints to manage products data of the shop and data of its customers.
 The server is deployed to Heroku and provides data for an simple example of an internet shop. To try a full web go to [https://lalashopper.herokuapp.com/products](https://lalashopper.herokuapp.com/products).
+
+## Content
+- [Technologies](#technologies)
+- [REST APIs endpoints](#rest-apis-endpoints)
+   - [Retrieve a list of all products](#retrieve-a-list-of-all-products)
+   - [Get a product by id](#get-a-product-by-id)
+   - [Find products by a keyword](#find-products-by-a-keyword)
+   - [Get main categories of products](#get-main-categories-of-products)
+   - [Get subcategories of main categories](#get-subcategories-of-main-categories)
+   - [Get products by category](#get-products-by-category)
+   - [Get available countries for delivering](#get-available-countries-for-delivering)
+   - [Get cities by country code](#get-cities-by-country-code)
+   - [Get principal of current user](#get-principal-of-current-user)
+   - [Login](#login)
+   - [Registration](#registration)
+   - [Buy a product](#buy-a-product)
+   
+   
+
 ## Technologies
 - JDK 19
 - Spring Framework (Spring Boot 3.0.2, Spring Data, Spring Security 3.0.2)
@@ -14,7 +33,7 @@ The server is deployed to Heroku and provides data for an simple example of an i
 ## REST APIs endpoints
 Be aware that the API is using context path `/api` by defalt.
 
-### Retrieve a list of products from database
+### Retrieve a list of all products
 ```
 GET api/products
 ```
@@ -58,7 +77,7 @@ vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 ]
 ```
 
-### Get product by Id
+### Get a product by id
 ```GET api/product/{id}```
 
 ***Curl*** 
@@ -101,7 +120,7 @@ vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 
 If no product found you wil get error with status 403
 
-### Find products by keyword
+### Find products by a keyword
 ```
 GET api/search
 ```
@@ -498,19 +517,3 @@ https://lalashopping.herokuapp.com/api/purchase
   "orderTrackingNumber": {orderTrackingNumber}
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
