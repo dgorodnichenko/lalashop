@@ -2,7 +2,14 @@
 
 This is an example of RESTful WebServer developed using Spring & SpringBoot.
 The server provides endpoints to manage products data of the shop and data of its customers.
-The server is deployed to Heroku and provides data for the internet shop. To try the full web go to [https://lalashopper.herokuapp.com/products](https://lalashopper.herokuapp.com/products).
+The server is deployed to Heroku and provides data for an simple example of an internet shop. To try a full web go to [https://lalashopper.herokuapp.com/products](https://lalashopper.herokuapp.com/products).
+## Technologies
+- JDK 19
+- Spring Framework (Spring Boot 3.0.2, Spring Data, Spring Security 3.0.2)
+- MySQL
+- [Swagger](https://lalashopping.herokuapp.com/api/swagger-ui/index.html)
+- Lombok
+- Maven
 
 ## REST APIs endpoints
 Be aware that the API is using context path `/api` by defalt.
