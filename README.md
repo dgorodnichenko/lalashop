@@ -36,6 +36,8 @@ To see frontend page go to [frontend repository](https://github.com/dgorodnichen
 - [Swagger](https://lalashop1-dgorodnichenko9.b4a.run/api/swagger-ui/index.html#/)
 - Lombok
 - Maven
+- MySQL hosting: Freedb.tech
+- App hosting: Back4App
 
 ## REST APIs endpoints
 > **Note**  
