@@ -1,8 +1,16 @@
 # Lalashop
 
-This is an example of RESTful WebServer developed using Spring & SpringBoot.
-The server provides endpoints to manage products data of the shop and data of its customers.
-The server is deployed to Heroku and provides data for an simple example of an internet shop. To try a full web go to [https://lalashopper.herokuapp.com/products](https://lalashopper.herokuapp.com/products).
+This is an example of RESTful WebServer developed using Spring & SpringBoot.  
+The app provides endpoints to manage the shop products data and data of its customers.  
+The app is deployed to [Back4App](https://www.back4app.com)  
+You can try one of the endpoints by clicking the link: [https://lalashop1-dgorodnichenko9.b4a.run/api/products](https://lalashop1-dgorodnichenko9.b4a.run/api/products).
+> **Note**  
+> Exposing data from db could take a while since the [hosting](https://freedb.tech) with the database has speed limitation in free tariff plan.
+
+Also you can use [Swagger](https://lalashop1-dgorodnichenko9.b4a.run/api/swagger-ui/index.html#/) to see all endpoints in more convenient way.   
+
+
+To see frontend page go to [frontend repository](https://github.com/dgorodnichenko/lalashop-frontend)
 
 ## Content
 - [Technologies](#technologies)
@@ -25,12 +33,13 @@ The server is deployed to Heroku and provides data for an simple example of an i
 - JDK 19
 - Spring Framework (Spring Boot 3.0.2, Spring Data, Spring Security 3.0.2)
 - MySQL
-- [Swagger](https://lalashopping.herokuapp.com/api/swagger-ui/index.html)
+- [Swagger](https://lalashop1-dgorodnichenko9.b4a.run/api/swagger-ui/index.html#/)
 - Lombok
 - Maven
 
 ## REST APIs endpoints
-Be aware that the API is using context path `/api` by defalt.
+> **Note**  
+> Be aware that the API is using context path `/api` by defalt.  
 
 ### Retrieve a list of all products
 ```
@@ -38,12 +47,12 @@ GET api/products
 ```
 ***Curl***:
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/products' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/products' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/products
+http://lalashop1-dgorodnichenko9.b4a.run/api/products
 ```
 
 ***Response Header***
@@ -81,12 +90,12 @@ vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 
 ***Curl*** 
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/product/1' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/product/1' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/product/{id}
+http://lalashop1-dgorodnichenko9.b4a.run/api/product/{id}
 ```
 
 ***Response Header***
@@ -125,12 +134,12 @@ GET api/search
 ```
 ***Curl***
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/search?keyword={keyword}' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/search?keyword={keyword}' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/search?keyword={keyword}
+http://lalashop1-dgorodnichenko9.b4a.run/api/search?keyword={keyword}
 ```
 
 ***Response Header***
@@ -168,12 +177,12 @@ GET api/main_categories
 ```
 ***Curl***
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/main_categories' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/main_categories' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/main_categories
+http://lalashop1-dgorodnichenko9.b4a.run/api/main_categories
 ```
 
 ***Response Header***
@@ -197,12 +206,12 @@ GET api/subcategories
 ```
 ***Curl***
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/subcategories' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/subcategories' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/subcategories
+http://lalashop1-dgorodnichenko9.b4a.run/api/subcategories
 ```
 
 ***Response Header***
@@ -230,12 +239,12 @@ GET api/category/{id}
 ```
 ***Curl***
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/category/1' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/category/{id}' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/category/1
+http://lalashop1-dgorodnichenko9.b4a.run/api/category/{id}
 ```
 
 ***Response Header***
@@ -273,12 +282,12 @@ GET api/countries
 ```
 ***Curl***
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/countries' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/countries' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/countries
+http://lalashop1-dgorodnichenko9.b4a.run/api/countries
 
 ```
 
@@ -305,12 +314,12 @@ GET api/cities/{country_code}
 ```
 ***Curl***
 ```
-curl -X 'GET' 'https://lalashopping.herokuapp.com/api/city/{country_code}' -H 'accept: */*'
+curl -X 'GET' 'http://lalashop1-dgorodnichenko9.b4a.run/api/city/{country_code}' -H 'accept: */*'
 ```
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/city/{country_code}
+http://lalashop1-dgorodnichenko9.b4a.run/api/city/{country_code}
 ```
 
 ***Response Header***
@@ -340,7 +349,7 @@ GET api/user
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/user
+hhttp://lalashop1-dgorodnichenko9.b4a.run/api/user
 ```
 
 ***Required Request Header***
@@ -378,14 +387,14 @@ POST api/auth/signin
 
 ***Curl***
 ```
-curl -X 'POST' 'https://lalashopping.herokuapp.com/api/auth/signin' -H 'accept: */*' -H 'Content-Type: application/json' -d '{
+curl -X 'POST' 'http://lalashop1-dgorodnichenko9.b4a.run/api/auth/signin' -H 'accept: */*' -H 'Content-Type: application/json' -d '{
   "email": {email},
   "password": "{password}"
 }'
 ```
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/auth/signin
+http://lalashop1-dgorodnichenko9.b4a.run/api/auth/signin
 ```
 ***Request body***
 ```
@@ -409,7 +418,7 @@ POST api/auth/signup
 
 ***Curl***
 ```
-curl -X 'POST' 'https://lalashopping.herokuapp.com/api/auth/signup' -H 'accept: */*' -H 'Content-Type: application/json' -d '{
+curl -X 'POST' 'http://lalashop1-dgorodnichenko9.b4a.run/api/auth/signup' -H 'accept: */*' -H 'Content-Type: application/json' -d '{
   "email": {email},
   "firstName": {firstName},
   "lastName": {lastName},
@@ -419,7 +428,7 @@ curl -X 'POST' 'https://lalashopping.herokuapp.com/api/auth/signup' -H 'accept: 
 ```
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/auth/signup
+http://lalashop1-dgorodnichenko9.b4a.run/api/auth/signup
 ```
 
 ***Request body***
@@ -447,7 +456,7 @@ POST api/purchase
 
 ***Request URL***
 ```
-https://lalashopping.herokuapp.com/api/purchase
+http://lalashop1-dgorodnichenko9.b4a.run/api/purchase
 ```
 ***Required body***
 ```
